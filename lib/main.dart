@@ -7,28 +7,28 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp>{
+class _MyAppState extends State<MyApp> {
   final String nameTitle = "Candra Julius Sinaga";
 
-  List<Widget>widgets = [];
+  List<Widget> widgets = [];
 
-  _MyAppState(){
+  _MyAppState() {
     for (int i = 0; i < 15; i++)
-    widgets.add(Text("Data ke - " + i.toString(), style: new TextStyle(fontSize: 35),))
+      widgets.add(Text(
+        "Data ke - " + i.toString(),
+        style: new TextStyle(fontSize: 35),
+      ));
   }
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appbar: AppBar(
-          title: Text(nameTitle),
-        ),
-        body: ListView(
-          children: widgets,
-          
-        )
-      )
-    );
+        home: Scaffold(
+            appbar: AppBar(
+              title: Text(nameTitle),
+            ),
+            body: ListView(
+              children: widgets,
+            )));
   }
 }
