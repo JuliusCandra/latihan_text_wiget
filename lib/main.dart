@@ -2,54 +2,33 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class MyApp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      // Application name
-      title: 'Aplikasi Candra Julius Sinaga',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Candra Julius Sinaga'),
-    );
-  }
+  _MyAppState createState() => _MyAppState();
 }
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-  final String nama = "Candra Julius Sinaga Sangat Ganteng Sekali Di Dunia Programmer";
+class _MyAppState extends State<MyApp>{
+  final String nameTitle = "Candra Julius Sinaga";
 
-  const MyHomePage({@required this.title});
+  List<Widget>widgets = [];
+
+  _MyAppState(){
+    for (int i = 0; i < 15; i++)
+    widgets.add(Text("Data ke - " + i.toString(), style: new TextStyle(fontSize: 35),))
+  }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: Center(
-        child: Container(
-          color: Colors.red,
-          width: 150,
-          height: 50,
-          child: Text(
-            nama,
-            softWrap: true,
-            textAlign: TextAlign.justify,
-            style: new TextStyle(
-              fontStyle: FontStyle.italic,
-              fontSize: 100,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
-            ),
-          ),
+  Widget build(BuildContext context){
+    return MaterialApp(
+      home: Scaffold(
+        appbar: AppBar(
+          title: Text(nameTitle),
         ),
-      ),
+        body: ListView(
+          children: widgets,
+          
+        )
+      )
     );
   }
 }
