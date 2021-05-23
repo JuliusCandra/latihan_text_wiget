@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Candra Julius Sinaga"),
@@ -34,15 +34,15 @@ class MyApp extends StatelessWidget {
             print("Candra Julius Sinaga");
           },
         ),
-      ),
-      body: Container(
-        margin: EdgeInsets.all(10),
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-        color: Colors.pinkAccent,
-        child: Container(
-          height: 200,
-          width: 100,
-          margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        body: Container(
+          margin: EdgeInsets.all(10),
+          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          color: Colors.pinkAccent,
+          child: Container(
+            height: 200,
+            width: 100,
+            margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          ),
         ),
       ),
     );
