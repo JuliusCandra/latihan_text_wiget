@@ -34,16 +34,17 @@ class MyApp extends StatelessWidget {
             },
           ),
         ),
-        debugShowCheckedModeBanner: false,
-        body: Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(20),
-            color: Colors.red,
-            child: Container(
-              height: 100,
-              width: 100,
-              margin: EdgeInsets.only(top: 20, bottom: 10),
-              padding: EdgeInsets.fromLTRB(10, 5, 5, 5),
-            )));
+      body: Container(
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        color: Colors.pinkAccent,
+        child: Container(
+          height: 200,
+          width: 100,
+          margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        )
+      )
+     debugShowCheckedModeBanner: false,
+    );
   }
 }
