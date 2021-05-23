@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 Row(
                   RaisedButton(child: Text("Tambah Data",style: new TextStyle(fontSize: 30, fontWeight: FontWeight.bold), ),
-                  onPressed: ),
+                  onPressed: null),
                   RaisedButton(child: Text("Hapus Data", style: new TextStyle(fontSize: 30, fontWeight: FontWeight.bold)), )
                 )              ]
             )
