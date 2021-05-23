@@ -27,9 +27,6 @@ class _MyAppState extends State<MyApp> {
             title: Text(name),
           ),
           body: ListView(
-            margin: EdgeInsets.only(
-              top: 20,
-            ),
             children: widgets,
           ),
         ));
