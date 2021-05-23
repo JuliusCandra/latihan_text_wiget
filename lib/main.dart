@@ -33,60 +33,9 @@ class MyApp extends StatelessWidget {
                 print("Candra Julius Sinaga");
               }
             }),
-        body: Column(corssAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
-          Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Colors.redAccent,
-              shape: BoxShape.circle,
-            ),
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Colors.pinkAccent,
-              shape: BoxShape.circle,
-            ),
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Colors.blueAccent,
-              shape: BoxShape.circle,
-            ),
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
-            Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.blueAccent,
-              ),
-            ),
-            Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.redAccent,
-              ),
-            ),
-            Container(
-              width: 50,
-              height: 50,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.pinkAccent,
-              ),
-            ),
-          ])
-        ]),
-      ),
+        body: 
       debugShowCheckedModeBanner: false,
+      )
     );
   }
 }
