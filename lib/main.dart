@@ -21,10 +21,6 @@ class MyApp extends StatelessWidget {
           ),
         ),
         debugShowCheckedModeBanner: false,
-        floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.red,
-            child: Text("+", new TextStyle(fontSize: 35), onPressed: () {
-              return Text("Candra Julius Sinaga", style: new TextStyle(fontSize: 35, color: Colors.red, fontWeight: FontWeight.bold));
-            })));
+        ));
   }
 }
