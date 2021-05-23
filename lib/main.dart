@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
           ),
         ),
-        floatingActonButton: FloatingActionButton(
+        floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.yellow,
           child: Text("+", style: new TextStyle(fontSize: 35, color: Colors.black)),
         ),
