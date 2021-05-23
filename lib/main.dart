@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(children: <Widget>[
           Container(
-            widht: 50,
+            width: 50,
             height: 50,
             decoration: BoxDecoration(
               color: Colors.redAccent,
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           Container(
-            widht: 50,
+            width: 50,
             height: 50,
             decoration: BoxDecoration(
               color: Colors.pinkAccent,
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           Container(
-            widht: 50,
+            width: 50,
             height: 50,
             decoration: BoxDecoration(
               color: Colors.blueAccent,
