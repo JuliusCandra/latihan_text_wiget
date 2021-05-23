@@ -5,6 +5,12 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   List<Widget> widgets = [];
 
+  void candra() {
+    children:
+    widgets.add(child: Text("Data ke - " + counter.toString(), style: new TextStyle(fontSize: 35)));
+    counter++;
+  }
+
   int counter = 1;
 
   @override
@@ -31,7 +37,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.pinkAccent,
           child: Text("+"),
           onPressed: () {
-            print("Candra Julius Sinaga");
+            ListView(candra);
           },
         ),
         body: null,
