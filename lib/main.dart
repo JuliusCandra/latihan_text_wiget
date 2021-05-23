@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
           color: Colors.pinkAccent,
           child: Container(
             height: 200,
+            color: Colors.yellow,
             width: 100,
             margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
           ),
