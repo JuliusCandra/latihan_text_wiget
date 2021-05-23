@@ -29,9 +29,7 @@ class _MyAppState extends State<MyApp> {
             leading: Icon(Icons.home),
             title: Text(name),
           ),
-          body: List(
-            children: widgets,
-          )),
+          body: ListView(children: widgets)),
     );
   }
 }
