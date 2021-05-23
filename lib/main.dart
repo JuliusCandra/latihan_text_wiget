@@ -8,33 +8,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Candra Julius Sinaga"),
-          backgroundColor: Colors.red,
-          leading: Icon(Icons.home),
-        ),
-        body: Stack(
-          children: <Widget>[
-            Container(
-              color: Colors.red,
-              height: 250,
-            ),
-            Positioned(
-              top: 195,
-              left: 155,
-              child: Container(
-                color: Colors.black38,
-                child: Center(
-                  child: Text(
-                    "style & Poistoned",
-                    style: new TextStyle(fontSize: 35, color: Colors.red, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+          appBar: AppBar(
+            title: Text("Candra Julius Sinaga"),
+            backgroundColor: Colors.red,
+            leading: Icon(Icons.home),
+          ),
+          body: Container(
+              child: Card(
+                  child: Column(children: <Widget>[
+            Image.network("https://www.linkedin.com/search/results/people/?firstName=Candra&lastName=Sinaga&origin=SEO_PSERP"),
+            Text("Candra Julius Sinaga")
+          ])))),
     );
   }
 }
