@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
           },
         ),
         body: Container(
+          mainAxisAlignment :MainAxisAlignment.center
           margin: EdgeInsets.all(10),
           padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
           color: Colors.pinkAccent,
