@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         // Perubahan baru
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.pinkAccent,
+          backgroundColor: Colors.red,
           child: Text("+"),
           onPressed: () {},
         ),
