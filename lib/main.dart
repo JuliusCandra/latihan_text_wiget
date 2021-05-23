@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             height: 50,
             decoration: BoxDecoration(color: Colors.blueAccent, shape: BoxShape.circle),
           ),
-          Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
+          Row(mainAxisAlignment: MainAxisAlignment.start, children: <Widget>[
             Container(
               width: 50,
               height: 50,
