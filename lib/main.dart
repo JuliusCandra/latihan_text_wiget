@@ -13,7 +13,7 @@ class _MyAppState extends State<MyApp> {
   final String name = "Candra Julius Sinaga";
 
   _MyAppState() {
-    for (int i = 0; i < 100; i++) widgets.add(Text("Data ke - " + i.toString(), style: new TextStyle(fontSize: 35)));
+    for (int i = 1; i < 101; i++) widgets.add(Text("Data ke - " + i.toString(), style: new TextStyle(fontSize: 35)));
   }
 
   @override
