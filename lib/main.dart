@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
           ),
         ),
+        centerTitle: true,
       ),
       debugShowCheckedModeBanner: false,
     );
