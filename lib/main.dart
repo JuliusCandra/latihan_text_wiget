@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
             leading: Icon(Icons.home),
             title: Text(name),
           ),
-          body: Column(
+          body: List(
             mainAxisAlignment: MainAxisAlignment.center,
             // crossAxisAlignment: CrossAxisAlignment.end,
             children: widgets,
