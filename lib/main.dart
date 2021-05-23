@@ -8,6 +8,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List<Widget> widgets = [];
+
+  final String name = "Candra Julius Sinaga";
+
+  _MyAppState() {
+    for (int i = 0; i < 100; i++) widgets.add(Text("Data ke - " + i.toString(), style: new TextStyle(fontSize: 35)));
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
