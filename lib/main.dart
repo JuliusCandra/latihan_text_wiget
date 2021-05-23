@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            print("Candra Julius Sinaga,, Bangsat sekali kau");
+            for (int i = 0; i < 3; i++) {
+              print("Candra Julius Sinaga");
+            }
           },
         ),
         body: Column(children: <Widget>[
