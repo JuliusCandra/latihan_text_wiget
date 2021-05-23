@@ -3,16 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  List<Widget> widgets = [];
-
-  void candra() {
-    children:
-    widgets.add(child: Text("Data ke - " + counter.toString(), style: new TextStyle(fontSize: 35)));
-    counter++;
-  }
-
-  int counter = 1;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,7 +27,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.pinkAccent,
           child: Text("+"),
           onPressed: () {
-            ListView(candra);
+            print('Candra Julius Sinaga');
           },
         ),
         body: null,
