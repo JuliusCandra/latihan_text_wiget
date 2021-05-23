@@ -10,12 +10,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Candra Julius Sinaga"),
           leading: Icon(Icons.home),
-          backgroundColor: Colors.pinkAccent,
+          backgroundColor: Colors.blue,
           actions: <Widget>[
             Icon(Icons.search)
           ],
           actionsIconTheme: IconThemeData(
             color: Colors.black,
+          ),
+          bottom: PreferredSize(
+            child: Container(color: Colors.yellow, height: 4.0),
+            preferredSize: Size.fromHeight(4.0),
           ),
           centerTitle: true,
         ),
