@@ -50,6 +50,16 @@ class MyApp extends StatelessWidget {
             Container(
               width: 50,
               height: 50,
+              decoration: BoxDecoration(color: Colors.redAccent, shape: BoxShape.circle),
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(color: Colors.pinkAccent, shape: BoxShape.circle),
+            ),
+            Container(
+              width: 50,
+              height: 50,
               decoration: BoxDecoration(color: Colors.blueAccent, shape: BoxShape.circle),
             ),
           ])
