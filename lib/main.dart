@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             print('Candra Julius Sinaga');
           },
         ),
-        body: Column(crossAxisAlignment: CrossAxisAlignment.center, children: <Widget>[
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
           Container(
             width: 50,
             height: 50,
