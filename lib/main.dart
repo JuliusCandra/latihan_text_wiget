@@ -8,13 +8,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.home),
           title: Text("Candra Julius Sinaga"),
+          leading: Icon(Icons.home),
           actions: <Widget>[
             Icon(Icons.search)
           ],
           actionsIconTheme: IconThemeData(color: Colors.yellow),
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.pinkAccent,
           bottom: PreferredSize(
               child: Container(
                 color: Colors.orange,
@@ -23,9 +23,17 @@ class MyApp extends StatelessWidget {
               preferredSize: Size.fromHeight(4.0)),
           centerTitle: true,
         ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.pinkAccent,
+          child: Text("+"),
+          onPressed: () {
+            for (int i = 0; i < 3; i++) {
+              print('Candra Julius Sinaga');
+            }
+          },
+        ),
+        body: null,
       ),
-      // Perubahan Baru
-      body: null,
       debugShowCheckedModeBanner: false,
     );
   }
