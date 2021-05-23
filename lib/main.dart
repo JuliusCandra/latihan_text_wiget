@@ -30,8 +30,6 @@ class _MyAppState extends State<MyApp> {
             title: Text(name),
           ),
           body: List(
-            mainAxisAlignment: MainAxisAlignment.center,
-            // crossAxisAlignment: CrossAxisAlignment.end,
             children: widgets,
           )),
     );
