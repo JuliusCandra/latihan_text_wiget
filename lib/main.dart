@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
             title: Text(name),
           ),
           body: Column(
-           mainAxisAlignment:MainAxisAlignment.center
+            mainAxisAlignment: MainAxisAlignment.center,
             children: widgets,
           )),
     );
