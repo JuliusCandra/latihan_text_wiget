@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
             leading: Icon(Icons.home),
             title: Text("Candra Julius Sinaga"),
             actions: <Widget>[
-              Icon(Icons.home),
               Icon(Icons.search),
             ],
             actionsIconTheme: IconThemeData(color: Colors.yellow),
@@ -26,8 +25,8 @@ class MyApp extends StatelessWidget {
             "+",
             style: TextStyle(
               fontSize: 20,
+              color: Colors.black,
             ),
-            color: Colors.black,
           ),
           onPressed: () {},
         ),
