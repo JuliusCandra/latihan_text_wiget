@@ -20,20 +20,19 @@ class MyApp extends StatelessWidget {
 
         // Perubahan baru
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          child: Text(
-            "+",
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.black,
+            backgroundColor: Colors.red,
+            child: Text(
+              "+",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+              ),
             ),
-          ),
-          onPressed: () {
-            for (int i = 0; i < 3; i++) {
-              print("Candra Julius Sinaga");
-            }
-          },
-        ),
+            onPressed: () {
+              for (int i = 0; i < 3; i++) {
+                print("Candra Julius Sinaga");
+              }
+            }),
         body: Column(corssAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
           Container(
             width: 50,
