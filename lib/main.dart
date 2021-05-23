@@ -8,12 +8,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text("Candra Julius Sinaga"),
-            leading: Icon(Icons.home),
-            backgroundColor: Colors.pinkAccent,
-            actions: <Widget>[
-              Icon(Icons.search)
-            ],
+          title: Text("Candra Julius Sinaga"),
+          leading: Icon(Icons.home),
+          backgroundColor: Colors.pinkAccent,
+          actions: <Widget>[
+            Icon(Icons.search)
+          ],
+        ),
       ),
     );
   }
