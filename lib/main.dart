@@ -24,9 +24,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: Colors.red,
-          leading: Icon(Icons.home),
           appBar: AppBar(
+            backgroundColor: Colors.red,
+            leading: Icon(Icons.home),
             title: Text(name),
           ),
           body: Column(
