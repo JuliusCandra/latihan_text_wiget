@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
     for (int i = 0; i < 15; i++)
       widgets.add(Text("Data ke - " + i.toString(),
           style: new TextStyle(
-            fontSize: i.toDouble(),
+            fontSize: 35,
           )));
   }
 
@@ -23,6 +23,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+          backgroundColor: Colors.red,
+          lieading: Icon(Icons.home)
           appBar: AppBar(
             title: Text(name),
           ),
