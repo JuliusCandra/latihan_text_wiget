@@ -6,6 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner:false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Candra Julius Sinaga"),
@@ -44,7 +45,6 @@ class MyApp extends StatelessWidget {
           margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
         ),
       ),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
