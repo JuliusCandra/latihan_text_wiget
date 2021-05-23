@@ -32,7 +32,32 @@ class MyApp extends StatelessWidget {
             print("Candra Julius Sinaga,, Bangsat sekali kau");
           },
         ),
-        body: null,
+        body: Column(children: <Widget>[
+          Container(
+            widht: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.redAccent,
+              shape: BoxShape.circle,
+            ),
+          ),
+          Container(
+            widht: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.pinkAccent,
+              shape: BoxShape.circle,
+            ),
+          ),
+          Container(
+            widht: 50,
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.blueAccent,
+              shape: BoxShape.circle,
+            ),
+          ),
+        ]),
       ),
       debugShowCheckedModeBanner: false,
     );
