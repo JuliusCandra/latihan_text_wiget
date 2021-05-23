@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
               Icon(Icons.search),
             ],
             actionsIconTheme: IconThemeData(color: Colors.yellow),
-            backgroundColor: Colors.pinkAccent,
+            backgroundColor: Colors.redAccent,
             bottom: PreferredSize(child: Container(color: Colors.orange, height: 4.0), preferredSize: Size.fromHeight(4.0)),
             centerTitle: true),
 
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
-        body: Column(children: <Widget>[
+        body: Column(corssAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
           Container(
             width: 50,
             height: 50,
@@ -59,6 +59,32 @@ class MyApp extends StatelessWidget {
               shape: BoxShape.circle,
             ),
           ),
+          Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.blueAccent,
+              ),
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.redAccent,
+              ),
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.pinkAccent,
+              ),
+            ),
+          ])
         ]),
       ),
       debugShowCheckedModeBanner: false,
