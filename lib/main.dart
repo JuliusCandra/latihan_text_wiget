@@ -22,11 +22,13 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: AppBar(
-          title: Text(name),
-        ),
-        body: Column(
-          children: widgets,
-        ));
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text(name),
+          ),
+          body: Column(
+            children: widgets,
+          )),
+    );
   }
 }
