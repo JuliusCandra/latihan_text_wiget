@@ -25,12 +25,35 @@ class MyApp extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.pinkAccent,
-          child: Text("+"),
+          child: Text("+", style: new TextStyle(fontSize: 35, color: Colors.black)),
           onPressed: () {
             print('Candra Julius Sinaga');
           },
         ),
-        body: null,
+        body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+          Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(color: Colors.redAccent, shape: BoxShape.circle),
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(color: Colors.pinkAccent, shape: BoxShape.circle),
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            decoration: BoxDecoration(color: Colors.blueAccent, shape: BoxShape.circle),
+          ),
+          Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
+            Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(color: Colors.blueAccent, shape: BoxShape.circle),
+            ),
+          ])
+        ]),
       ),
       debugShowCheckedModeBanner: false,
     );
