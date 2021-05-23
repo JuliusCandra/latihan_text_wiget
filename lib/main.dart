@@ -11,10 +11,29 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Candra Julius Sinaga"),
           backgroundColor: Colors.red,
-          centerTitle: true,
           leading: Icon(Icons.home),
         ),
-        body: null,
+        body: Stack(
+          children: <Widget>[
+            Container(
+              color: Colors.red,
+              height: 250,
+            ),
+            Positioned(
+              top: 195,
+              left: 155,
+              child: Container(
+                color: Colors.black38,
+                child: Center(
+                  child: Text(
+                    "style & Poistoned",
+                    style: new TextStyle(fontSize: 35, color: Colors.red, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
