@@ -39,6 +39,17 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
           color: Colors.pinkAccent,
           child: Container(
+            decoration: BoxDecoration(
+              color: Colors.lightBlue,
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: <Color>[
+                  Colors.red,
+                  Colors.blue
+                ],
+              ),
+            ),
             height: 200,
             color: Colors.yellow,
             width: 100,
