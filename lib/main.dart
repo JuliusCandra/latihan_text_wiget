@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  List<Widget> widgets = [];
+
+  int counter = 1;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,9 +31,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.pinkAccent,
           child: Text("+"),
           onPressed: () {
-            for (int i = 0; i < 3; i++) {
-              print('Candra Julius Sinaga');
-            }
+            print("Candra Julius Sinaga");
           },
         ),
         body: null,
