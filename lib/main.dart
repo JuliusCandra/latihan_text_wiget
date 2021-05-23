@@ -19,6 +19,16 @@ class MyApp extends StatelessWidget {
           ),
           centerTitle: true,
         ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.red,
+          child: Text(
+            "+",
+            style: new TextStyle(fontSize: 35, color: Colors.black),
+          ),
+          onPressed: () {
+            print("Candra Julius Sinaga");
+          },
+        ),
       ),
       debugShowCheckedModeBanner: false,
     );
