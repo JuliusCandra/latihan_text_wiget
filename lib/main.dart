@@ -49,6 +49,10 @@ class MyApp extends StatelessWidget {
                   Colors.blue
                 ],
               ),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: <BoxShadow>[
+                BoxShadow(blurRadius: 10),
+              ],
             ),
             height: 200,
             width: 100,
