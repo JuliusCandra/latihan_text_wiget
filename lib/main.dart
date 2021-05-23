@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       actions: <Widget>[
         Icon(Icons.search)
       ],
-      actionIconsTheme: IconThemeData(color: Colors.yellow),
+      actionsIconTheme: IconThemeData(color: Colors.yellow),
       bottom: PreferredSize(child: Container(color: Colors.yellow, height: 4.0)),
       preferredSize: Size.fromHeight(4.0),
     )));
