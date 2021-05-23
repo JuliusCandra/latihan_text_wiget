@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
           actionsIconTheme: IconThemeData(
             color: Colors.black,
           ),
+          centerTitle: true,
         ),
-        centerTitle: true,
       ),
       debugShowCheckedModeBanner: false,
     );
