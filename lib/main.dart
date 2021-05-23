@@ -28,7 +28,6 @@ class _MyAppState extends State<MyApp> {
             backgroundColor: Colors.red,
             leading: Icon(Icons.home),
             title: Text(name),
-            subTitle: Text("Home"),
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
