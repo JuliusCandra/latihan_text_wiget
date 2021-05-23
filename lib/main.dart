@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             leading: Icon(Icons.home),
-            backgroundColor: Colors.red,
             title: Text("Candra Julius Sinaga"),
             actions: <Widget>[
               Icon(Icons.home),
