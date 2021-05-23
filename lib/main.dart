@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       // Perubahan Baru
-
+      body: null,
       debugShowCheckedBanner: false,
     );
   }
