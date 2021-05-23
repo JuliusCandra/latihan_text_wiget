@@ -19,9 +19,10 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.pinkAccent,
             bottom: PreferredSize(child: Container(color: Colors.orange, height: 4.0), preferredSize: Size.fromHeight(4.0)),
             centerTitle: true),
+
         // Perubahan baru
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.pinkAccent,
+          color: Colors.pinkAccent,
           child: Text("+"),
           onPressed: () {},
         ),
