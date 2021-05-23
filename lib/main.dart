@@ -17,8 +17,6 @@ class MyApp extends StatelessWidget {
           actionsIconTheme: IconThemeData(
             color: Colors.black,
           ),
-          bottom: PreferredSize(child: Container(color: Colors.yellow, height: 4.0)),
-          preferredSize: Size.fromHeight(4.0),
         ),
       ),
       debugShowCheckedModeBanner: false,
