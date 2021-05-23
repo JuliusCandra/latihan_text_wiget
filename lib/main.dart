@@ -12,6 +12,8 @@ class _MyAppState extends State<MyApp> {
 
   List<Widget> widgets = [];
 
+ var counter = 1;
+
   _MyAppState() {
     for (int i = 0; i < 15; i++)
       widgets.add(Text(
@@ -28,7 +30,14 @@ class _MyAppState extends State<MyApp> {
               title: Text(nameTitle),
             ),
             body: ListView(
-              children: widgets,
-            )));
+              children: <Widget>[
+                Row(
+                  RaisedButton(child: Text("Tambah Data",style: new TextStyle(fontSize: 30, fontWeight: FontWeight.bold), ),
+                  onPressed: ),
+                  RaisedButton(child: Text("Hapus Data", style: new TextStyle(fontSize: 30, fontWeight: FontWeight.bold)), )
+                )              ]
+            )
+        )
+    );
   }
 }
