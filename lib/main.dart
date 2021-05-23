@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: <Color>[
+                colors: [
                   Colors.red,
                   Colors.blue
                 ],
