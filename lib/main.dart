@@ -34,7 +34,6 @@ class _BelajarFormState extends State<BelajarForm> {
               title: Text("Konfirmasi"),
               content: Text(
                 controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
-                + nilaiCheckBox,
               ),
               actions: [
                 FlatButton(
@@ -50,11 +49,7 @@ class _BelajarFormState extends State<BelajarForm> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.home),
-        title: Text("Candra Julius Sinaga"),
-        centerTitle: true
-      ),
+      appBar: AppBar(leading: Icon(Icons.home), title: Text("Candra Julius Sinaga"), centerTitle: true),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
