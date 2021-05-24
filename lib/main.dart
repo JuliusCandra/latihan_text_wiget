@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: "Belajar Form Flutter",
+    debugShowCheckedModeBanner: false,
+    title: "Flutter",
     home: BelajarForm(),
   ));
 }
@@ -21,7 +22,7 @@ class _BelajarFormState extends State<BelajarForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("BelajarFlutter.com"),
+        title: Text("Candra Julius Sinaga"),
       ),
       body: Form(
         key: _formKey,
@@ -43,7 +44,7 @@ class _BelajarFormState extends State<BelajarForm> {
                       if (value.isEmpty) {
                         return 'Nama tidak boleh kosong';
                       }
-                      return null;
+s                      return null;
                     },
                   ),
                 ),
@@ -105,6 +106,8 @@ class _BelajarFormState extends State<BelajarForm> {
                   color: Colors.blue,
                   onPressed: () {
                     if (_formKey.currentState.validate()) {}
+
+                    
                   },
                 ),
               ],
