@@ -13,6 +13,11 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.red,
             leading: Icon(Icons.home),
           ),
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.red,
+            elevation: 8.0,
+            child: Text("+", style: new TextStyle(fontSize: 25, color: Colors.black)),
+          ),
           body: Container(
               child: Card(
                   child: Column(children: <Widget>[
@@ -22,3 +27,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*
+Kesimpulannya
+Card adalah sebuah widget yang menjadi membentuk kartu
+Image.network() = adalah mengambil gambar dari internet
+*/
