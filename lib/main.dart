@@ -36,6 +36,7 @@ class _BelajarFormState extends State<BelajarForm> {
               title: Text("Konfirmasi"),
               content: Text(
                 controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
+                + nilaiCheckBox.toString();
               ),
               actions: [
                 FlatButton(
