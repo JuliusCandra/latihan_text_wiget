@@ -113,9 +113,9 @@ class _BelajarFormState extends State<BelajarForm> {
                   ),
                   color: Colors.blue,
                   onPressed: () {
-                    if (_formKey.currentState.validate()) {
-                      return;
-                    }
+                    if (_formKey.currentState.validate()) {}
+
+                    _formKey.currentState.save();
                     showDialog(
                         context: context,
                         builder: (context) {
