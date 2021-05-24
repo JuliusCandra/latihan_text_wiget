@@ -29,15 +29,15 @@ class _BelajarFormState extends State<BelajarForm> {
             height: 200.0,
             child: Column(children: <Widget>[
               new Text(
-                "Nama Lengkap: " + controllerNama,
+                controllerNama,
                 style: new TextStyle(color: Colors.red, fontSize: 15),
               ),
               new Text(
-                "Password: " + controllerPassword.text,
+                controllerPassword,
                 style: new TextStyle(color: Colors.blue, fontSize: 15),
               ),
               new Text(
-                "Nomor Handphone: " + controllerPhone.toString(),
+                controllerPhone,
                 style: new TextStyle(color: Colors.black, fontSize: 15),
               ),
               new Text("Belajar: " + nilaiCheckBox.toString())
