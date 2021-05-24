@@ -29,18 +29,17 @@ class _BelajarFormState extends State<BelajarForm> {
             height: 200.0,
             child: Column(children: <Widget>[
               new Text(
-                controllerNama,
+                controllerNama.text(),
                 style: new TextStyle(color: Colors.red, fontSize: 15),
               ),
               new Text(
-                controllerPassword,
+                controllerPassword.text(),
                 style: new TextStyle(color: Colors.blue, fontSize: 15),
               ),
               new Text(
-                controllerPhone,
+                controllerPhone.text(),
                 style: new TextStyle(color: Colors.black, fontSize: 15),
               ),
-              new Text("Belajar: " + nilaiCheckBox.toString())
             ])),
         actions: [
           FlatButton(
