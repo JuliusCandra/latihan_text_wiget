@@ -23,6 +23,30 @@ class _BelajarFormState extends State<BelajarForm> {
   TextEditingController controllerPassword = new TextEditingController();
   TextEditingController controllerPhone = new TextEditingController();
 
+  void _submitData() {
+    final isValid = _formKey.currentState.validate();
+    if (!isValid) {
+      return;
+    }
+
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+              title: Text("Konfirmasi"),
+              content: Text(
+                controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
+              ),
+              actions: [
+                FlatButton(
+                    child: Text("OK"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    })
+              ]);
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -113,25 +137,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   ),
                   color: Colors.blue,
                   onPressed: () {
-                    if (_formKey.currentState.validate()) {}
-
-                    _formKey.currentState.save();
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                              title: Text("Konfirmasi"),
-                              content: Text(
-                                controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
-                              ),
-                              actions: [
-                                FlatButton(
-                                    child: Text("OK"),
-                                    onPressed: () {
-                                      Navigator.of(context).pop();
-                                    })
-                              ]);
-                        });
+                    _submitData();
                   },
                 ),
               ],
