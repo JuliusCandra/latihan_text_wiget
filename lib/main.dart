@@ -14,15 +14,16 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.home),
         ),
         floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.red,
-            elevation: 8.0,
-            child: Icon(Icons.add),
-            body: Container(
-                child: Card(
-                    child: Column(children: <Widget>[
-              Image.network("https://www.linkedin.com/search/results/people/?firstName=Candra&lastName=Sinaga&origin=SEO_PSERP"),
-              Text("Candra Julius Sinaga")
-            ])))),
+          backgroundColor: Colors.red,
+          elevation: 8.0,
+          child: Icon(Icons.add),
+        ),
+        body: Container(
+            child: Card(
+                child: Column(children: <Widget>[
+          Image.network("https://www.linkedin.com/search/results/people/?firstName=Candra&lastName=Sinaga&origin=SEO_PSERP"),
+          Text("Candra Julius Sinaga")
+        ]))),
       ),
     );
   }
