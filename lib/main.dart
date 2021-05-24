@@ -22,6 +22,7 @@ class _BelajarFormState extends State<BelajarForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Icon(Icons.home),
         title: Text("Candra Julius Sinaga"),
       ),
       body: Form(
@@ -60,6 +61,24 @@ class _BelajarFormState extends State<BelajarForm> {
                     validator: (value) {
                       if (value.isEmpty) {
                         return 'Password tidak boleh kosong';
+                      }
+                      return null;
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.phone,
+                    decoration: new InputDecoration(
+                      hintText: "contoh: 12345679010",
+                      labelText: "Nomor Telepon",
+                      icon: Icon(Icons.people),
+                      border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
+                    ),
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return 'Nama telepon tidak boleh kosong';
                       }
                       return null;
                     },
