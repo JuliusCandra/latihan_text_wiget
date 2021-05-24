@@ -39,6 +39,7 @@ class _BelajarFormState extends State<BelajarForm> {
               ),
               actions: [
                 FlatButton(
+                    backgroundColor: Colors.red,
                     child: Text("OK"),
                     onPressed: () {
                       Navigator.of(context).pop();
