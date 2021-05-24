@@ -15,9 +15,7 @@ class BelajarForm extends StatefulWidget {
 
 class _BelajarFormState extends State<BelajarForm> {
   final _formKey = GlobalKey<FormState>();
-  double nilaiSlider = 1;
   bool nilaiCheckBox = false;
-  bool nilaiSwitch = true;
 
   TextEditingController controllerNama = new TextEditingController();
   TextEditingController controllerPassword = new TextEditingController();
@@ -55,6 +53,7 @@ class _BelajarFormState extends State<BelajarForm> {
       appBar: AppBar(
         leading: Icon(Icons.home),
         title: Text("Candra Julius Sinaga"),
+        centerTitle: true
       ),
       body: Form(
         key: _formKey,
