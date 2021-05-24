@@ -14,10 +14,12 @@ class MyApp extends StatelessWidget {
           leading: Icon(Icons.home),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          elevation: 8.0,
-          child: Icon(Icons.add),
-        ),
+            backgroundColor: Colors.red,
+            elevation: 8.0,
+            child: Icon(Icons.add),
+            onPressed: () {
+              print('Candra Julius Sinaga');
+            }),
         body: Container(
             child: Card(
                 child: Column(children: <Widget>[
