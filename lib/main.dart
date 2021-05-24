@@ -18,6 +18,40 @@ class _BelajarFormState extends State<BelajarForm> {
   double nilaiSlider = 1;
   bool nilaiCheckBox = false;
   bool nilaiSwitch = true;
+
+  TextEditingController controllerNama = new TextEditingController();
+  TextEditingController controllerPassword = new TextEditingController();
+  TextEditingController controllerPhone = new TextEditingController();
+
+  void ambilData() {
+    AlertDialog alertDialog = new AlertDialog(
+        content: new Container(
+            height: 200,
+            child: Column(padding: EdgeInsets.all(10), children: [
+              new Text(
+                "Nama Lengkap: " + controllerNama.text,
+                style: new TextStyle(color: Colors.red, fontSize: 15),
+              ),
+              new Text(
+                "Password: " + controllerPassword.text,
+                style: new TextStyle(color: Colors.blue, fontSize: 15),
+              ),
+              new Text(
+                "Nomor Handphone: " + controllerPhone,
+                style: new TextStyle(color: Colors.black, fontSize: 15),
+              ),
+              new Text("Belajar: " + nilaiCheckBox.toString())
+            ])),
+        actions: [
+          FlatButton(
+              child: Text("Ok"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              })
+        ]);
+      showDialog(context: context,child: alertDialog,  )
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +69,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    controller: controllerNama,
                     maxLength: 10,
                     decoration: new InputDecoration(
                       hintText: "contoh: Susilo Bambang",
@@ -54,6 +89,7 @@ class _BelajarFormState extends State<BelajarForm> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     maxLength: 8,
+                    controller: controllerPassword,
                     obscureText: true,
                     decoration: new InputDecoration(
                       labelText: "Password",
@@ -71,6 +107,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    controller: controllerPhone,
                     maxLength: 12,
                     keyboardType: TextInputType.phone,
                     decoration: new InputDecoration(
@@ -105,7 +142,10 @@ class _BelajarFormState extends State<BelajarForm> {
                   ),
                   color: Colors.blue,
                   onPressed: () {
-                    if (_formKey.currentState.validate()) {}
+                    if (_formKey.currentState.validate()) {
+                      return;
+                    }
+                    ambilData();
                   },
                 ),
               ],
