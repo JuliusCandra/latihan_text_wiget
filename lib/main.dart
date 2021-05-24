@@ -35,6 +35,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    maxLength: 10,
                     decoration: new InputDecoration(
                       hintText: "contoh: Susilo Bambang",
                       labelText: "Nama Lengkap",
@@ -52,6 +53,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    maxLength: 8,
                     obscureText: true,
                     decoration: new InputDecoration(
                       labelText: "Password",
@@ -69,6 +71,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
+                    maxLength: 12,
                     keyboardType: TextInputType.phone,
                     decoration: new InputDecoration(
                       hintText: "contoh: 12345679010",
