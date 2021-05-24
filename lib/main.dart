@@ -26,8 +26,8 @@ class _BelajarFormState extends State<BelajarForm> {
   void ambilData() {
     AlertDialog alertDialog = new AlertDialog(
         content: new Container(
-            height: 200,
-            child: Column(padding: EdgeInsets.all(10), children: [
+            height: 200.0,
+            child: Column(children: [
               new Text(
                 "Nama Lengkap: " + controllerNama.text,
                 style: new TextStyle(color: Colors.red, fontSize: 15),
