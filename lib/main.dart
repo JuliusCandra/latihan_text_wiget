@@ -24,31 +24,9 @@ class _BelajarFormState extends State<BelajarForm> {
   TextEditingController controllerPhone = new TextEditingController();
 
   void ambilData() {
-    AlertDialog alertDialog = new AlertDialog(
-        content: new Container(
-            height: 200.0,
-            child: Column(children: <Widget>[
-              new Text(
-                controllerNama.text(),
-                style: new TextStyle(color: Colors.red, fontSize: 15),
-              ),
-              new Text(
-                controllerPassword.text(),
-                style: new TextStyle(color: Colors.blue, fontSize: 15),
-              ),
-              new Text(
-                // controllerPhone.text(),
-                style: new TextStyle(color: Colors.black, fontSize: 15),
-              ),
-            ])),
-        actions: [
-          FlatButton(
-              child: Text("Ok"),
-              onPressed: () {
-                Navigator.of(context).pop();
-              })
-        ]);
-    showDialog(context: context, child: alertDialog);
+      showDialog(
+
+      )
   }
 
   @override
@@ -144,7 +122,25 @@ class _BelajarFormState extends State<BelajarForm> {
                     if (_formKey.currentState.validate()) {
                       return;
                     }
-                    ambilData();
+                    showDialog(
+                      context: context,
+                      builder: (context){
+                        return AlertDialog(
+                          title: Text("Konfirmasi"),
+                          content: Text(
+                            controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
+                          ),
+                          actions: [
+                            FlatButton(
+                              child: Text("OK"),
+                              onPressed: (){
+                                Navigator.of(context).pop();
+                              }
+                            )
+                          ]
+                        )
+                      }
+                    )
                   },
                 ),
               ],
