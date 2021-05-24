@@ -44,7 +44,7 @@ class _BelajarFormState extends State<BelajarForm> {
                       if (value.isEmpty) {
                         return 'Nama tidak boleh kosong';
                       }
-s                      return null;
+                      return null;
                     },
                   ),
                 ),
@@ -106,8 +106,6 @@ s                      return null;
                   color: Colors.blue,
                   onPressed: () {
                     if (_formKey.currentState.validate()) {}
-
-                    
                   },
                 ),
               ],
