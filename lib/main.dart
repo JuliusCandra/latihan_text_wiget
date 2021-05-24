@@ -73,7 +73,7 @@ class _BelajarFormState extends State<BelajarForm> {
                     decoration: new InputDecoration(
                       hintText: "contoh: 12345679010",
                       labelText: "Nomor Telepon",
-                      icon: Icon(Icons.people),
+                      icon: Icon(Icons.phone),
                       border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
                     ),
                     validator: (value) {
@@ -92,28 +92,6 @@ class _BelajarFormState extends State<BelajarForm> {
                   onChanged: (value) {
                     setState(() {
                       nilaiCheckBox = value;
-                    });
-                  },
-                ),
-                SwitchListTile(
-                  title: Text('Backend Programming'),
-                  subtitle: Text('Dart, Nodejs, PHP, Java, dll'),
-                  value: nilaiSwitch,
-                  activeTrackColor: Colors.pink[100],
-                  activeColor: Colors.red,
-                  onChanged: (value) {
-                    setState(() {
-                      nilaiSwitch = value;
-                    });
-                  },
-                ),
-                Slider(
-                  value: nilaiSlider,
-                  min: 0,
-                  max: 100,
-                  onChanged: (value) {
-                    setState(() {
-                      nilaiSlider = value;
                     });
                   },
                 ),
