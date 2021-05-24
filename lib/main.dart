@@ -49,7 +49,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 Navigator.of(context).pop();
               })
         ]);
-      showDialog(context: context,child: alertDialog,  )
+    showDialog(context: context, child: alertDialog);
   }
 
   @override
