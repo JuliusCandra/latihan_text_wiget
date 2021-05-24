@@ -23,12 +23,6 @@ class _BelajarFormState extends State<BelajarForm> {
   TextEditingController controllerPassword = new TextEditingController();
   TextEditingController controllerPhone = new TextEditingController();
 
-  void ambilData() {
-      showDialog(
-
-      )
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,24 +117,21 @@ class _BelajarFormState extends State<BelajarForm> {
                       return;
                     }
                     showDialog(
-                      context: context,
-                      builder: (context){
-                        return AlertDialog(
-                          title: Text("Konfirmasi"),
-                          content: Text(
-                            controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
-                          ),
-                          actions: [
-                            FlatButton(
-                              child: Text("OK"),
-                              onPressed: (){
-                                Navigator.of(context).pop();
-                              }
-                            )
-                          ]
-                        )
-                      }
-                    )
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                              title: Text("Konfirmasi"),
+                              content: Text(
+                                controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
+                              ),
+                              actions: [
+                                FlatButton(
+                                    child: Text("OK"),
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    })
+                              ]);
+                        });
                   },
                 ),
               ],
