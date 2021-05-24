@@ -37,7 +37,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 style: new TextStyle(color: Colors.blue, fontSize: 15),
               ),
               new Text(
-                controllerPhone.text(),
+                // controllerPhone.text(),
                 style: new TextStyle(color: Colors.black, fontSize: 15),
               ),
             ])),
