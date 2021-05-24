@@ -27,9 +27,9 @@ class _BelajarFormState extends State<BelajarForm> {
     AlertDialog alertDialog = new AlertDialog(
         content: new Container(
             height: 200.0,
-            child: Column(children: [
+            child: Column(children: <Widget>[
               new Text(
-                "Nama Lengkap: " + controllerNama.text,
+                "Nama Lengkap: " + controllerNama,
                 style: new TextStyle(color: Colors.red, fontSize: 15),
               ),
               new Text(
@@ -37,7 +37,7 @@ class _BelajarFormState extends State<BelajarForm> {
                 style: new TextStyle(color: Colors.blue, fontSize: 15),
               ),
               new Text(
-                "Nomor Handphone: " + controllerPhone,
+                "Nomor Handphone: " + controllerPhone.toString(),
                 style: new TextStyle(color: Colors.black, fontSize: 15),
               ),
               new Text("Belajar: " + nilaiCheckBox.toString())
