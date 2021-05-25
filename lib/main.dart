@@ -16,6 +16,9 @@ class BelajarForm extends StatefulWidget {
 class _BelajarFormState extends State<BelajarForm> {
   String _jk = "";
 
+  String _title = "Belajar Dasar Flutter";
+  String _subTitle = "Dart, widget, http";
+
   void _pilihJk(String value) {
     setState(() {
       _jk = value;
@@ -48,6 +51,7 @@ class _BelajarFormState extends State<BelajarForm> {
                     new Text("Password: " + controllerPassword.text),
                     new Text("Nomor Telepon: " + controllerPhone.text),
                     new Text("Jenis Kelamin: " + _jk),
+                    new Text("Title: " + _title + "\n" + "SubTitle: " + _subTitle),
                   ],
                 ),
               ),
@@ -132,8 +136,8 @@ class _BelajarFormState extends State<BelajarForm> {
                   ),
                 ),
                 CheckboxListTile(
-                  title: Text('Belajar Dasar Flutter'),
-                  subtitle: Text('Dart, widget, http'),
+                  title: Text(_title),
+                  subtitle: Text(_subTitle),
                   value: nilaiCheckBox,
                   activeColor: Colors.deepPurpleAccent,
                   onChanged: (value) {
