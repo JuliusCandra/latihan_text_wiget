@@ -14,6 +14,14 @@ class BelajarForm extends StatefulWidget {
 }
 
 class _BelajarFormState extends State<BelajarForm> {
+  String _jk = "";
+
+  void _pilihJk() {
+    setState(() {
+      _jk = value;
+    });
+  }
+
   final _formKey = GlobalKey<FormState>();
   bool nilaiCheckBox = false;
 
@@ -129,6 +137,29 @@ class _BelajarFormState extends State<BelajarForm> {
                 new Padding(
                   padding: new EdgeInsets.only(top: 20),
                 ),
+                new RadioListTile(
+                  value: "Laki-Laki",
+                  title: new Text("laki-laki"),
+                  groupValue: _jk,
+                  onChanged: (String value) {
+                    _pilihJk(value);
+                  },
+                  activeColor: Colors.blue,
+                  subtitle: new Text("pilih ini jika anda laki-laki"),
+                ),
+                new RadioListTile(
+                  value: "Perempuan",
+                  title: new Text("Perempuan"),
+                  groupValue: _jk,
+                  onChanged: (String value) {
+                    _pilihJk(value);
+                  },
+                  activeColor: Colors.blue,
+                  subtitle: new Text("Pilih ini jika anda perempuan"),
+                ),
+                new Padding(
+                  padding: EdgeInsets.only(top: 20),
+                ),
                 RaisedButton(
                   child: Text(
                     "Submit",
@@ -147,6 +178,7 @@ class _BelajarFormState extends State<BelajarForm> {
     );
   }
 }
+
 /*
 Kesimpulannya
 Card adalah sebuah widget yang menjadi membentuk kartu
