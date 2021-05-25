@@ -40,8 +40,16 @@ class _BelajarFormState extends State<BelajarForm> {
         builder: (context) {
           return AlertDialog(
               title: Text("Konfirmasi"),
-              content: Text(
-                controllerNama.text + '\n' + controllerPassword.text + '\n' + controllerPhone.text,
+              content: new Container(
+                height: 200,
+                child: new Column(
+                  children: [
+                    new Text("Nama Lengkap: " + controllerNama.text),
+                    new Text("Password: " + controllerPassword.text),
+                    new Text("Nomor Telepon: " + controllerPhone.text),
+                    new Text("Jenis Kelamin: " + _jk),
+                  ],
+                ),
               ),
               actions: [
                 FlatButton(
