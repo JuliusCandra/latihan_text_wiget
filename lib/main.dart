@@ -63,7 +63,7 @@ class _BelajarFormState extends State<BelajarForm> {
                     controller: controllerNama,
                     maxLength: 10,
                     decoration: new InputDecoration(
-                      hintText: "contoh: Susilo Bambang",
+                      hintText: "contoh: Candra Julius Sinaga",
                       labelText: "Nama Lengkap",
                       icon: Icon(Icons.people),
                       border: OutlineInputBorder(borderRadius: new BorderRadius.circular(5.0)),
@@ -125,6 +125,9 @@ class _BelajarFormState extends State<BelajarForm> {
                       nilaiCheckBox = value;
                     });
                   },
+                ),
+                new Padding(
+                  padding: new EdgeInsets.only(top: 20),
                 ),
                 RaisedButton(
                   child: Text(
