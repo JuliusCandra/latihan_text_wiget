@@ -16,7 +16,7 @@ class BelajarForm extends StatefulWidget {
 class _BelajarFormState extends State<BelajarForm> {
   String _jk = "";
 
-  void _pilihJk() {
+  void _pilihJk(String value) {
     setState(() {
       _jk = value;
     });
